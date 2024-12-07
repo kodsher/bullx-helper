@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Open Links in Tab 1 and Tab 2",
+  "version": "1.0",
+  "description": "Opens links with href containing 'x.com' in Tab 1 and the first <a> child of pump-card in Tab 2.",
+  "permissions": ["storage", "tabs"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}

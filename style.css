@@ -1,0 +1,26 @@
+.toast-message {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    z-index: 1000;
+    opacity: 0.9;
+    animation: slideIn 0.5s ease-out;
+  }
+  
+  @keyframes slideIn {
+    from {
+      top: -50px;
+      opacity: 0;
+    }
+    to {
+      top: 20px;
+      opacity: 0.9;
+    }
+  }
+  
